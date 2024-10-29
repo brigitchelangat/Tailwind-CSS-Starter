@@ -6,9 +6,18 @@
 @tailwind utilities;
 @layer components{
     .btn{
-        @apply bg-indigo-500 px-5 hover:bg-indigo-400 sm:hover:bg-green-400
-        hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 active:bg-indigo-600 transform transition py-3 inline-block 
+        @apply sm:hover:bg-green-400 focus:outline-none focus:ring focus:ring-offset-2 transform transition py-3 inline-block 
         rounded-lg shadow-lg text-white uppercase tracking-wider font-semibold 
-        text-sm sm:text-base
+        text-sm sm:text-base;
+    }
+    .btn-primary{
+        @apply bg-indigo-500 px-5 hover:bg-indigo-400
+        hover:-translate-y-0.5  focus:ring-indigo-500 active:bg-indigo-600 transform transition py-3 inline-block 
+        rounded-lg shadow-lg text-white ;
+    }
+    .btn-secondary{
+        @apply bg-gray-300 px-5 hover:bg-gray-200 sm:hover:bg-green-400
+        focus:outline-none focus:ring focus:ring-offset-2 focus:ring-gray-100 active:bg-indigo-600 transform transition py-3 inline-block 
+        rounded-lg shadow-lg text-gray-500 ;
     }
 }
